@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+  }
+  
+  .header {
+    padding: 60px;
+    text-align: center;
+    background: #f7f7f7;
+    color: #4b4a52;
+    font-family: 'Playfair Display', serif;
+    font-size:x-large;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #5f7370;
+  }
+  
+  .navbar a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+  }
+  
+  .navbar a:hover {
+    background-color: #abb3b1;
+    color: black;
+  }
+  
+  .row {  
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+   .about {
+    flex: 30%;
+    background-color: #f1f1f1;
+    padding: 20px;
+  }
+
+  .about-header {
+      display: flex;
+      justify-content: center;
+      font-family: "Playfair Display", serif;
+  }
+
+  .blog-header {
+    font-family: "Playfair Display", serif;
+
+  }
+
+  .button {
+    border: none;
+    background-color: #5f7370;
+    border-radius: 5px;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    display: flex;
+    width: 100%;
+    text-decoration: none;
+    justify-content: center;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .button:hover {
+    background-color: #abb3b1;
+    color: black;
+  }
+  
+  .blog {
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+  }
+  
+  .img {
+    background-color: #e1e2dc;
+    width: 100%;
+    padding: 20px;
+    display:flex;
+    justify-content: center;
+
+  }
+  
+  .footer {
+    padding: 20px;
+    text-align: center;
+    background: #5f7370;
+    color:white;
+    font-size: x-small;
+  }
+  
+  /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 700px) {
+    .row, .navbar {   
+      flex-direction: column;
+    }
+  }
